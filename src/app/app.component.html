@@ -9,8 +9,11 @@
     <input class="btn btn-primary" type="submit" value="-" (click)="resta()">  <!-- event binding -->
     <input class="btn btn-primary" type="submit" value="/" (click)="dividir()">  <!-- event binding -->
     <input class="btn btn-primary" type="submit" value="*" (click)="multiplicar()">  <!-- event binding --> 
+    <input class="btn btn-primary" type="submit" value="=" (click)="igual()" > <!-- event binding -->
 
   </form>
 </div>
 
-<p> El resultado es: {{resultado}}</p>
+<p *ngIf="bandera">{{mensaje}} El resultado es: {{resultado}}</p> 
+
+
