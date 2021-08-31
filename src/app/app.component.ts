@@ -13,6 +13,7 @@ export class AppComponent {
   resultadoParcial: number=0;
   resultado: number=0;
   bandera = false;
+  
 
 
   suma():void{
@@ -21,7 +22,8 @@ export class AppComponent {
   }
 
   resta():void{
-    this.resultadoParcial = this.numero1-this.numero2;
+    this.resultadoParcial = this.numero1-this.numero20202;
+    
     
   }
   dividir():void{
