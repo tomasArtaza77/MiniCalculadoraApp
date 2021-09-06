@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Calculadora Pequeña';
   mensaje = '';
@@ -13,16 +14,15 @@ export class AppComponent {
   resultadoParcial: number=0;
   resultado: number=0;
   bandera = false;
-  
 
-
+  // suma
   suma():void{
-    this.resultadoParcial = this.numero1+this.numero2;
+    this.resultadoParcial = this.numero1 + this.numero2;
     
   }
 
   resta():void{
-    this.resultadoParcial = this.numero1-this.numero20202;
+    this.resultadoParcial = this.numero1-this.numero2;
     
     
   }
@@ -38,7 +38,7 @@ export class AppComponent {
   igual():void{
     this.resultado = this.resultadoParcial;
     this.mensaje = 'Calculo realizado con exito.'
-    this.bandera = true;
+    this.bandera = true; 
   }
 
 }

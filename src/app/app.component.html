@@ -2,7 +2,7 @@
 <div class="container">
   <form>
 
-    Numero 1: <input type="number" [(ngModel)]="numero1" name="numero1"> <!-- binding --> <br><br>
+    Numero 1: <input type="number"  name="numero1"> <!-- binding --> <br><br>
     Numero 2: <input type="number" [(ngModel)]="numero2" name="numero2"> <br><br>
 
     <input class="btn btn-primary" type="submit" value="+" (click)="suma()">  <!-- event binding --> 
@@ -10,10 +10,11 @@
     <input class="btn btn-primary" type="submit" value="/" (click)="dividir()">  <!-- event binding -->
     <input class="btn btn-primary" type="submit" value="*" (click)="multiplicar()">  <!-- event binding --> 
     <input class="btn btn-primary" type="submit" value="=" (click)="igual()" > <!-- event binding -->
-
+    
   </form>
 </div>
+<div></div>
+<p *ngIf="bandera">{{mensaje}} El resultado es: {{resultado}}</p>
 
-<p *ngIf="bandera">{{mensaje}} El resultado es: {{resultado}}</p> 
 
 
